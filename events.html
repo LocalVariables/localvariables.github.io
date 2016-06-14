@@ -6,6 +6,10 @@
     <!--Foundation CSS -->
     <link href="css/foundation.css" type="text/css" rel="stylesheet"></link>
     <link href="css/normalize.css" type="text/css" rel="stylesheet"></link>
+    <link href="css/foundation-datepicker.css" type="text/css" rel="stylesheet"></link>
+    <link href="css/foundation-icons.css" type="text/css" rel="stylesheet"></link>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 
   </head>
 
@@ -72,16 +76,27 @@
                     </div>
                 </div>
             </form>
+            <div class="row collapse date" id="dpMonths" data-date-format="mm/yyyy" data-start-view="year" data-min-view="year" style="max-width:200px;">
+	             <div class="small-2 columns">
+		               <span class="prefix"><i class="fi-calendar"></i></span>
+	             </div>
+	             <div class="small-10 columns">
+		               <input size="16" type="text" value="02/2012" readonly>
+	             </div>
+            </div>
+            <!--<script>
+              $(function(){
+                $('#dpMonths').fdatepicker();
+              });
+            </script>-->
         </div>
     </div>
   </div>
 
   <div class="row">
-
     <div class="large-8 columns">
-      <h4 id="titleStage">About</h4>
-      <p id="descriptionStage">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      <i class="fi-social-twitter"></i>
+      <h4 id="titleStage">Security: Footprinting by Susan Donoho</h4>
+      <p id="descriptionStage">In computers, footprinting is the process of accumulating data regarding a specific network environment, usually for the purpose of finding ways to intrude into the environment. Footprinting can reveal system vulnerabilities and improve the ease with which they can be exploited. The more informed software and systems developers are the more secure they can become.</p>
     </div>
     <div class="large-4 columns">
       <img id="imgStage" src="img/susanSecurityTalk.png">
@@ -116,6 +131,7 @@
   </footer>
 
     <script type="text/javascript" src="js/LV.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation-datepicker.js"></script>
 
   </body>
 </html>
